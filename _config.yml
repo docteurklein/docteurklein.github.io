@@ -1,0 +1,17 @@
+# Site settings
+title: docteurklein's tentative to write stuff
+email: florian.klein@free.fr
+description: "docteurklein's tentative to write stuff"
+baseurl: ""
+url: "http://docteurklein.github.io"
+twitter_username: docteur_klein
+github_username:  docteurklein
+disqus_username:  docteurklein
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+sass:
+    style: compressed
