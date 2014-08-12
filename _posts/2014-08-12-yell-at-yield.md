@@ -51,7 +51,20 @@ The only solution I found is to throw an exception in the function that yields b
 and instead of checking emptiness of the result, I try/catch.
 
 
-<script src="http://gist-it.appspot.com/github/docteurklein/event-store/blob/87c47caa791449e1b40a6e59416ea8d05e110079/src/Knp/Event/Store/InMemory.php?footer=0&slice=17:28"></script>
+{% highlight php %}
+<?php
+public function byProvider($class, $id)
+{
+    if (empty($this->events[$class][$id])) {
+        throw new NoResult;
+    }
+    foreach ($this->events[$class][$id] as $event) {
+            yield $event;
+        }
+    }
+}
+
+{% endhighlight %}
 
 
 Now if anyone has a better solution for this, I'll take it :)
