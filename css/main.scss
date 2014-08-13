@@ -8,6 +8,11 @@
     border-radius: 4px;
     color: #31708f;
     background-color: #d9edf7;
+    vertical-align: middle;
+
+    * {
+        vertical-align: middle;
+    }
 }
 
 .twitter-share-button {
