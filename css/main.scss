@@ -1,6 +1,14 @@
 ---
 ---
 
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
 .post-scriptum {
     padding: 15px;
     margin-top: 5%;
@@ -61,8 +69,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
-a         { color: #2a7ae2; text-decoration: none; }
-a:hover   { color: #000; text-decoration: underline; }
+a         { color: #2a7ae2; text-decoration: none; @include vendor-prefix(transition, text-shadow .7s); }
+a:hover   { color: #000; text-decoration: underline; text-shadow: 0px 0px 50px #2a7ae2; }
 a:visited { color: #205caa; }
 
 /* Utility */

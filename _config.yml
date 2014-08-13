@@ -12,6 +12,3 @@ disqus_username:  docteurklein
 markdown: kramdown
 permalink: pretty
 highlighter: pygments
-
-sass:
-    style: compressed
