@@ -39,6 +39,8 @@ And this is due to known issues, that are registered here:
  * [ https://jira.mongodb.org/browse/PHP-820 ](https://jira.mongodb.org/browse/PHP-820)
  * and maybe others ?
 
+## The solution
+
 Instead you have to fallback to the pre-generator era, and write your own IteratorIterator:
 
 {% highlight php %}
@@ -62,5 +64,10 @@ final class CursorIterator extends \IteratorIterator
 ## Conclusion
 
 Generators are not yet the silver bullet :)  
-You can also have a look at [the complete implementation](https://github.com/docteurklein/event-store/blob/87c47caa791449e1b40a6e59416ea8d05e110079/src/Knp/Event/Store/Mongo.php).
+Of course, I'm not blaming anything nor anyone. It's all pure happiness to be able to play with all this good work!  
+I'm just sharing my thoughts and experience.  
+Talking about that, I'd like to hear what [@jmikola](https://twitter.com/jmikola) is thinking about that?  
+
+PS: You can also have a look at [the complete implementation](https://github.com/docteurklein/event-store/blob/87c47caa791449e1b40a6e59416ea8d05e110079/src/Knp/Event/Store/Mongo.php).
+
 
