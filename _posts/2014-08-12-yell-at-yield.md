@@ -59,8 +59,7 @@ public function byProvider($class, $id)
         throw new NoResult;
     }
     foreach ($this->events[$class][$id] as $event) {
-            yield $event;
-        }
+        yield $event;
     }
 }
 
