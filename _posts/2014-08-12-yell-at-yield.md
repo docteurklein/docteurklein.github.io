@@ -2,6 +2,7 @@
 layout: post
 title: Yell at yield!
 tldr:  Generators. Count. Lazyness. Sadness.
+tags: php yield generator iterator
 ---
 
 

@@ -6,16 +6,50 @@ layout: default
   <header class="post-header">
     {% include tweet.html %}
     <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="meta">
+        {{ page.date | date: "%b %-d, %Y" }}
+        {% if page.author %}
+            • {{ page.author }}
+        {% endif %}
+        {% if page.meta %}
+            • {{ page.meta }}
+        {% endif %}
+        {% if page.tags %}
+            • {{ page.tags | array_to_sentence_string }}
+        {% endif %}
+    </p>
 
     <br />
     <br />
     <b>tl;dr</b> <blockquote class="tldr">{{ page.tldr }}</blockquote>
+    <br />
+    <br />
   </header>
 
   <article class="post-content">
   {{ content }}
   </article>
+
+  <section class="related-posts">
+      <h2>Related Posts</h2>
+      <ul itemscope itemtype="http://schema.org/Blog">
+      {% for related in site.posts | where: 'tags', page.tags %}
+          {% assign already = false %}
+          {% for tag in related.tags %}
+              {% if related.title != page.title and page.tags contains tag and already == false %}
+              {% assign already = true %}
+              <li itemscope itemtype="http://schema.org/BlogPosting">
+                  <time datetime="{{ related.date | date_to_xmlschema }}">
+                      <meta itemprop="datePublished" content="{{ related.date | date_to_xmlschema }}" />
+                      {{ related.date | date: "%b %-d, %Y" }}
+                  </time>
+                  <span class="separator"> &raquo; </span><a itemprop="name" href="{{ related.url }}" class="link">{{ related.title }}</a>
+              </li>
+              {% endif %}
+          {% endfor %}
+      {% endfor %}
+      </ul>
+  </section>
 
   <div class="post-scriptum">
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>

@@ -2,6 +2,7 @@
 layout: post
 title: using yield generator with mongodb
 tldr:  don't even try!
+tags: php yield generator mongo
 ---
 
 `MongoCollection::find` returns [`MongoCursor`](http://php.net/manual/en/class.mongocursor.php) instances.  
@@ -66,7 +67,7 @@ final class CursorIterator extends \IteratorIterator
 Generators are not yet the silver bullet :)  
 Of course, I'm not blaming anything nor anyone. It's all pure happiness to be able to play with all this good work!  
 I'm just sharing my thoughts and experience.  
-Talking about that, I'd like to hear what [@jmikola](https://twitter.com/jmikola) is thinking about that?  
+Talking about that, I'd like to hear what @jmikola is thinking about that?  
 
 PS: You can also have a look at [the complete implementation](https://github.com/docteurklein/event-store/blob/87c47caa791449e1b40a6e59416ea8d05e110079/src/Knp/Event/Store/Mongo.php).
 
