@@ -9,6 +9,11 @@
   #{$name}: #{$argument};
 }
 
+abbr {
+    cursor: help;
+    border-bottom: 1px dotted #777;
+}
+
 .post-scriptum, .edit {
     padding: 15px;
     margin-top: 5%;
@@ -69,7 +74,7 @@ body {
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
 a         { color: #2a7ae2; text-decoration: none; @include vendor-prefix(transition, text-shadow .2s); }
-a:hover   { color: #000; text-decoration: underline; text-shadow: 0px 0px 50px #2a7ae2; }
+a:hover,  { color: #000; text-decoration: underline; text-shadow: 0px 0px 50px #2a7ae2; }
 a:visited { color: #205caa; }
 
 /* Utility */
