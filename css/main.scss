@@ -9,7 +9,7 @@
   #{$name}: #{$argument};
 }
 
-.post-scriptum {
+.post-scriptum, .edit {
     padding: 15px;
     margin-top: 5%;
     border: 1px solid #bce8f1;
@@ -17,7 +17,9 @@
     color: #31708f;
     background-color: #d9edf7;
     vertical-align: middle;
+}
 
+.post-scriptum {
     * {
         vertical-align: middle;
     }

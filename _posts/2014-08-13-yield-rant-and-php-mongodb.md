@@ -1,9 +1,35 @@
 ---
 layout: post
 title: using yield generator with mongodb
-tldr:  don't even try!
+tldr:  (don't even) try!
 tags: php yield generator mongo
 ---
+
+<div markdown="1" class="edit">
+**EDIT:** Thanks to @jmikola feedback, it appears that a simple fix is to put the `selectCollection` call out of the generator function!
+
+{% highlight php %}
+<?php
+public function findBy($class, $id)
+{
+    $events = $this->events->selectCollection($class)->find([
+        'emitter_id' => (string)$id,
+    ]);
+    if (0 === $events->count()) {
+        throw new NoResult;
+    }
+
+    return $this->iterate($events);
+}
+
+private function iterate(\MongoCursor $events)
+{
+    foreach ($events as $event) {
+        yield $this->serializer->unserialize($event);
+    }
+}
+{% endhighlight %}
+</div>
 
 `MongoCollection::find` returns [`MongoCursor`](http://php.net/manual/en/class.mongocursor.php) instances.  
 Those are iterators.
