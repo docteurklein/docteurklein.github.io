@@ -73,17 +73,18 @@ Those projections would be optimised for querying, denormalized, and each part o
 
 Every projection can have its own persistence engine, be it mongo for denormalized data, or a graph DB for sake of "you name it".
 
-That's where comes the "eventual consistency" thing. It's not that it's eventual**ly** correct :), it just that system state can take some time to be accurately represented in projections. [^1]
+That's where comes the "eventual consistency" thing. It's not that it's eventual**ly** correct :), it's just that system state can take some time to be accurately represented in projections. [^1]
 
 ### Impedance (mis)match
 
 CRUD by itself has nothing to do with persistence, but we all are pragmatic here, and we know that we store objects for the long term.  
 ORM's are here to persist the current state of an object into a relational database.  
 This is not without consequences. There are some conceptual differences between those that complicates things.  
-Moreover, most of the times, ORM's tend to promote one single model for both reads and write, in contradiction with CQS and CQRS.
+Moreover, most of the time, ORM's tend to promote one single model for both reads and write, in contradiction with CQS and CQRS.
 
 ES, as a contrary, does not have this impedance mismatch. Even more, it **match**es the OO paradigms of object messaging and encapsulation,
-if we consider emitted events as part of their public API [^1].
+if we consider emitted events as part of their public API [^1].  
+It also forces you to have a separate model for reads, via projections, since reading using event-sourced object would be totally inefficient.
 
 ## Pick your choices
 
