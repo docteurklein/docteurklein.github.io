@@ -1,7 +1,7 @@
 # Site settings
-title: docteurklein's tentative to write stuff
+title: "docteurklein's tentative to write stuff"
 email: florian.klein@free.fr
-description: "docteurklein's tentative to write stuff"
+description: "Thoughts on programming"
 baseurl: ""
 url: "http://docteurklein.github.io"
 twitter_username: docteur_klein
