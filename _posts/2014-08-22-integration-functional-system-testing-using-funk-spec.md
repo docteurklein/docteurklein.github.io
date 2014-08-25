@@ -12,7 +12,7 @@ I'm writing this as a web developer, and thus will talk about my habits as such.
 </div>
 
 Unit testing is great. You test behavior of units (i.e: instances of your classes),  
-and mock their collaborators, mimicking **how** they should behave, most of the time.
+and mock their collaborators, mimicking how they should behave, most of the time.
 
 *Most of the time*. Testing units permit to ensure that each piece of the puzzle is correctly shaped.  
 It doesn't verify if the puzzle is resolvable, or if the final picture makes any sense :)
@@ -115,6 +115,11 @@ And it will output stuff like:
 <span class="f2">✔ it should pass</span> <span class="f6">funk/TestSpec.php</span> <span class="f3">+14</span>
 </pre>
 
+
+<div markdown="1" class="divergence">
+By the way, look at the `+9` above: it's a vim-compatible format!  
+Just copy paste the whole path (or configure your terminal) and it will open the buffer at the corect line position :)
+</div>
 
 Being based on `Behat/TestWork`, it comes out of the box with many interesting features!
 
