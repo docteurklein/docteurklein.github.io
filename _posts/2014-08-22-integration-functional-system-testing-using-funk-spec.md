@@ -118,7 +118,7 @@ And it will output stuff like:
 
 <div markdown="1" class="divergence">
 By the way, look at the `+9` above: it's a vim-compatible format!  
-Just copy paste the whole path (or configure your terminal) and it will open the buffer at the corect line position :)
+Just copy paste the whole path (or configure your terminal) and it will open the buffer at the correct line position :)
 </div>
 
 Being based on `Behat/TestWork`, it comes out of the box with many interesting features!
