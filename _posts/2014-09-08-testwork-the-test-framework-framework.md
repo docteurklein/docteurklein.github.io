@@ -212,7 +212,7 @@ The other important concept to tackle is the `CallCenter` and `Call`s.
 ### Call me maybe?
 
 The main interest of this is to delegate the execution of userland code (i.e the tests) to a call center.  
-This way, it will be able to automatically handle exceptions, return status, and wrap the result with interesting extra information contained in a `Callresult`.
+This way, it will be able to automatically handle exceptions, return status, and wrap the result with interesting extra information contained in a `CallResult`.
 
 TestWork makes it so that everything that is callable by the CallCenter can be taken into account in the final result.
 
