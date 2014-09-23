@@ -1,0 +1,71 @@
+==================================================================
+https://keybase.io/docteurklein
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://docteurklein.github.io
+  * I am docteurklein (https://keybase.io/docteurklein) on keybase.
+  * I have a public key with fingerprint 3D72 A8B7 E58D 01F7 72CD  17D7 962C 67BE E5C3 F3FC
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "3d72a8b7e58d01f772cd17d7962c67bee5c3f3fc",
+            "host": "keybase.io",
+            "key_id": "962c67bee5c3f3fc",
+            "uid": "eb71d860caaf9d5fcedab3a0b8543500",
+            "username": "docteurklein"
+        },
+        "service": {
+            "hostname": "docteurklein.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411482415,
+    "expire_in": 157680000,
+    "prev": "06487331dc1c0263409b0aefb27284d89bb10b1cb23fe77f5406aa05c4b8516c",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.0.5
+Comment: https://keybase.io/crypto
+
+yML+AnicO8LLzMDFOE0nfd/Tw5//MJ4+yFDKEKLYrF+tlJSfUqlkVa2UnQqm0jLz
+0lOLCooy80qUrJSMU8yNEi2SzFNNLVIMDNPMzY2SUwzNU8wtzYySzcyTUlNNk43T
+jNOSlXSUMvKLQTqAxiQlFqfqZeYDxYCc+MwUoCgW9aVgidQkc8MUCzOD5MTENMsU
+07Tk1JTEJONEgyQLUxNjUwMDkMLi1KK8xNxUoOqU/OSS1NKi7JzUzDylWh0loExZ
+ZnIqyN0g67Go0kvPLMkoTYI4p6AovyQ/OT8HqCajpKSg2ApkRkllAUhTeWpSPNS4
++KTMvBRgMAB1lKUWFWfm5ylZGQJVJpdkgsw3NDE0NLEwMjE01VFKrSjILEqNzwSp
+MDU3szAAApA9qWVAIw3MTCzMjY0NU5INkw2MzIxNDCyTDBJT05KMzI0sTFIsLJOS
+DA2SDJOTjIzTUs3N00xNDMwSEw1Mk02Avjc0AwVScWphXr6SlQnQmYnpQCOLM9Pz
+EktKi1KVag8djGFhYORiYGNlAkUkAxenACx6BQz5/xfLy25o4Nx1LGvJz6AbC80D
+fYpatwpWc77M75L8KrG6/+cJmzvGB1+s/Koo6Gj17E5Bdzr30tmXp5xaIvrj91Gl
+3qfdM4xcHWtKZbc936Ui8MSqpUdPpdpW7WnzeSkbqaX3OibqfEvjnqs7ZcJ3B42K
+o54/XWUPxQoxsHt3rvssLrYg6+1szbtH797lVC90T7vfzHWoLWBC2fvfHJprCmXP
+teqXLF+1S83orV7trwBJA+3W3cmlH2NvbGV/fmuOX2hFaVOt6gXu83NP8xq8e3xY
+ZtXL4FdB3to9ocJZFTa30kwOFd/cbTBxrpO5W9/LxXeWuWkVpicbvLpcaKsauthu
+ReF5xR/NouqyU84pv12slP90f/vll//3LjvY0F42eWZCdiV7jbWDxIfM4pX7H5w8
+1/8hJa+J78nG0u5XDkvuPxFy0PGb/PWA2bPi58If6lwfhEezXhXYcODEmR7W7Xfm
+lgafDuFckflSKWGd0EpXwVuNKuejZjf+Ssp/2S6Q0czw9ktQ0Of5Ubv450/9tS+j
+Tltin3pUfczUbGu/yzkePz5735UzL/GZ/+BvzrfbZy+vehW4Sl83O8Bkuezbz3se
+B7pZtUv1n32+YGbopDcqqwRl13/a6L/cKOC3znMHBl+n+5scJuvcPJwec4W9nUM2
+jdVgwebgHC0fpnUvn+1dH9Lf/+FWvPXTnqsdT1sPRj1//y+C7f8xg0t7LwAAZM+h
+lA==
+=5B4m
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/docteurklein
+
+==================================================================
