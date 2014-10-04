@@ -5,6 +5,13 @@ tldr:  or how to normalize the way you initialize common setup
 tags: php test framework testwork funk-spec
 ---
 
+<div markdown="1" class="edit">
+**UPDATE**:
+
+- @everzet [wrote an exellent article](http://everzet.com/post/99045129766/introducing-modelling-by-example) concerning a different usage of suites.
+- The glue I as talking about at the end of this article [has been merged](https://github.com/docteurklein/funk-spec/pull/4) inside funk-spec as of now.
+</div>
+
 In most test frameworks, there are methods to initialize a test case.
 The reason behind this is to ensure that all the test cases are executed with the same set of data, or, to be more generalistic, the same exact context, whatever the order of run. It facilitates **isolation**.
 

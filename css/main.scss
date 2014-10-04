@@ -26,6 +26,9 @@ abbr {
     color: #31708f;
     background-color: #d9edf7;
     vertical-align: middle;
+    a {
+        text-decoration: underline;
+    }
 }
 
 .post-scriptum {
