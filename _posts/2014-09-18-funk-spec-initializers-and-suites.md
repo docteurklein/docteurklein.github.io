@@ -9,7 +9,7 @@ tags: php test framework testwork funk-spec
 **UPDATE**:
 
 - @everzet [wrote an exellent article](http://everzet.com/post/99045129766/introducing-modelling-by-example) concerning a different usage of suites.
-- The glue I as talking about at the end of this article [has been merged](https://github.com/docteurklein/funk-spec/pull/4) inside funk-spec as of now.
+- The glue I am talking about at the end of this article [has been merged](https://github.com/docteurklein/funk-spec/pull/4) inside funk-spec as of now.
 </div>
 
 In most test frameworks, there are methods to initialize a test case.
