@@ -14,6 +14,10 @@ abbr {
     border-bottom: 1px dotted #777;
 }
 
+sup:not(:last-child) .footnote:after {
+    content: ", ";
+}
+
 .divergence {
     padding-left: 30px;
 }
